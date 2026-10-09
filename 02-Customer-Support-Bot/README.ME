@@ -1,1 +1,11 @@
 
+# Target: Customer Support Assistant (WhatsApp Bot)
+
+## 🚨 Vulnerability: System Prompt Leakage via Authority Impersonation
+**Description:** 
+The assistant's core instructions and behavior rules were completely exposed by using a context reframing technique. By adopting the persona of an "international auditor" and requesting an English translation of its operational guidelines, the AI bypassed its own security filters and revealed its internal instruction hierarchy.
+
+## 🐛 Proof of Concept (PoC)
+- **Methodology:** Context Reframing / Translation Task Jailbreak.
+- **Impact:** Complete exposure of the system prompt, including tone directives, language constraints, and commercial priorities.
+- **Evidence:** See attached screenshot detailing the exact `Behavior Rules` extracted from the model.
