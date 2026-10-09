@@ -1,1 +1,13 @@
 
+# Target: Major Electronics Retailer (Web Chatbot)
+
+## 🚨 Vulnerability: Unauthorized Commitments & Internal Logic Extraction
+**Description:** 
+This audit revealed two significant flaws. First, through a gamified prompt injection, the AI was manipulated into explicitly declaring that the user had "won a 50-inch TV and a notebook", creating a severe liability risk. Second, the bot was coerced into revealing its internal processing logic and tool-calling workflow.
+
+## 🐛 Proof of Concept (PoC)
+- **Methodology:** Gamification Jailbreak & Technical Context Prompting.
+- **Impact:** 
+  1. False promise generation (Liability/Consumer Rights risk).
+  2. Exposure of internal API routing and tool-execution rules.
+- **Evidence:** See attached screenshots showing the AI promising high-value electronics and detailing its internal classification workflow.
